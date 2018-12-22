@@ -1,0 +1,187 @@
+$font-averia: 'Averia Libre';
+$font-carter: 'Carter One';
+$font-skranji:'Skranji';
+
+
+@mixin clearFix() {
+     &::after {
+          display: block;
+          content: "";
+          clear: both;
+     }
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background: #1d1d1d;
+     background: #0a152e;
+     color: #ffb14a;
+}
+
+.wrapper {
+     position: relative;
+     min-width: 1200px;
+     min-height: 800px;
+     margin: 0 auto;
+}
+
+.nav {
+     height: 90px;
+     background: #0000003a;
+     color: white;
+     border-bottom: 1px solid #ffffff12;
+     font-family: $font-skranji;
+     letter-spacing: 1px;
+
+     .nav__title {
+          font-size: 70px;
+          text-align: center;
+          line-height: 70px;
+          margin: 0 0 30px 50px;
+          padding-top: 10px;
+     }
+
+     .nav__title>img {
+          height: 50px;
+     }
+
+}
+
+.info {
+     margin: 50px 0;
+     background: #0a152e;
+     background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-image: -moz-linear-gradient(90deg, rgba(180, 227, 145, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-image: linear-gradient(90deg, rgba(180, 227, 145, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-position: 0% 0%;
+     -webkit-background-origin: padding-box;
+     background-origin: padding-box;
+     -webkit-background-clip: border-box;
+     background-clip: border-box;
+     -webkit-background-size: auto auto;
+     background-size: auto auto;
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+
+     .info__elements {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          color: #7DA658;
+          font-family: $font-skranji;
+          opacity: 0.5;
+
+          >li {
+               min-width: 170px;
+               padding: 0 20px;
+               border-top: 1px solid #ffa60060;
+
+               >span {
+                    margin-left: 5px;
+                    color: white;
+               }
+
+          }
+
+          &::after {
+               position: absolute;
+               left: 50%;
+               bottom: 0;
+               transform: translate(-50%);
+               width: 800px;
+               content: "";
+               display: inline-block;
+               height: 1px;
+               background: #ffa60060;
+          }
+     }
+}
+
+.control {
+     position: fixed;
+     bottom: 40px;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     margin: 50px 0 0 0;
+     background: #0a152e;
+     background-image: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-image: -moz-linear-gradient(90deg, rgba(180, 227, 145, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-image: linear-gradient(90deg, rgba(180, 227, 145, 0.0) 0, #0d1c3d 50%, rgba(0, 0, 0, 0.0) 100%);
+     background-position: 0% 0%;
+     -webkit-background-origin: padding-box;
+     background-origin: padding-box;
+     -webkit-background-clip: border-box;
+     background-clip: border-box;
+     -webkit-background-size: auto auto;
+     background-size: auto auto;
+     height: 40px;
+     line-height: 40px;
+     text-align: center;
+
+     >i {
+          margin: 0 8px;
+          font-size: 30px;
+          line-height: 40px;
+          color: orange;
+          opacity: 0.4;
+          transition: 0.2s;
+
+          &:hover {
+               opacity: 1;
+               color: orange;
+               cursor: pointer;
+          }
+     }
+
+
+}
+
+.firstPage {
+     margin: 0 auto;
+     width: 648px;
+     height: 400px;
+     background: rgba(0, 0, 0, 0.5);
+
+     display: none;
+}
+
+#board {
+
+     // display: none;
+     margin: 0 auto;
+     opacity: 1;
+     // border: 1px solid orange;
+     @include clearFix();
+
+     div {
+          width: 10px;
+          height: 10px;
+          border: 1px solid #cccccc;
+          background-color: #ffffff;
+          float: left;
+     }
+
+     div.live {
+          background: #63ac2c;
+     }
+}
+
+
+footer {
+     text-align: center;
+     font-family: $font-carter;
+     position: fixed;
+     bottom: 10px;
+     left: 50%;
+     transform: translate(-50%, 0);
+     color: white;
+     opacity: 0.5;
+}

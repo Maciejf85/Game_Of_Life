@@ -16,6 +16,7 @@ gulp.task('serve', function () {
     });
 
     gulp.watch('./*.html', ['reload']);
+    gulp.watch('./src/js/*.js', ['reload']);
 });
 
 gulp.task('sass', function () {
@@ -47,7 +48,7 @@ gulp.task('watch', ['sass', 'serve'], function () {
 
 
 // 1. npm init -y
-// 2. npm i -D gulp gulp-sass gulp browser-sync gulp-sourcemaps gulp-autoprefixer gulp-uglify
+// 2. npm i -D gulp gulp-sass browser-sync gulp-sourcemaps gulp-autoprefixer gulp-uglify
 
 // 3. gulp watch
 // 4. gulp js
