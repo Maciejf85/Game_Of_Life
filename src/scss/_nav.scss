@@ -1,0 +1,21 @@
+.nav {
+     height: 90px;
+     background: #0000003a;
+     color: white;
+     border-bottom: 1px solid #ffffff12;
+     font-family: $font-skranji;
+     letter-spacing: 1px;
+
+     .nav__title {
+          font-size: 70px;
+          text-align: center;
+          line-height: 70px;
+          margin: 0 0 30px 50px;
+          padding-top: 10px;
+     }
+
+     .nav__title>img {
+          height: 50px;
+     }
+
+}

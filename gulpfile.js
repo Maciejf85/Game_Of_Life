@@ -21,12 +21,12 @@ gulp.task('serve', function () {
 
 gulp.task('sass', function () {
     return gulp.src('src/scss/main.scss')
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
-            outputStyle: 'nested' //nested, expanded, compact, compressed.
+            outputStyle: 'compact' //nested, expanded, compact, compressed.
         }))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(autoprefixer({
             browsers: ['last 3 versions']
         }))
