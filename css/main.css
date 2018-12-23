@@ -38,8 +38,12 @@ body { background: #1d1d1d; background: #0a152e; color: #ffb14a; }
 
 #board::after { display: block; content: ""; clear: both; }
 
-#board div { width: 10px; height: 10px; border: 1px solid #cccccc; background-color: #ffffff; float: left; }
+#board div { width: 5px; height: 5px; border: 1px solid #cccccc; background-color: #ffffff; float: left; }
 
-#board div.live { background: #63ac2c; }
+#board div.live { background: #398300; }
+
+#board div.red { background: red; }
+
+#board div.blue { background: blue; }
 
 footer { text-align: center; font-family: "Carter One"; position: fixed; bottom: 10px; left: 50%; -webkit-transform: translate(-50%, 0); -ms-transform: translate(-50%, 0); transform: translate(-50%, 0); color: white; opacity: 0.5; }

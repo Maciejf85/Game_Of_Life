@@ -64,15 +64,23 @@ body {
      @include clearFix();
 
      div {
-          width: 10px;
-          height: 10px;
+          width: 5px;
+          height: 5px;
           border: 1px solid #cccccc;
           background-color: #ffffff;
           float: left;
      }
 
      div.live {
-          background: #63ac2c;
+          background: #398300;
+     }
+
+     div.red {
+          background: red;
+     }
+
+     div.blue {
+          background: blue;
      }
 }
 
