@@ -24,11 +24,11 @@ gulp.task('sass', function () {
         // .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
-            outputStyle: 'compact' //nested, expanded, compact, compressed.
+            outputStyle: 'compressed' //nested, expanded, compact, compressed.
         }))
         // .pipe(sourcemaps.write())
         .pipe(autoprefixer({
-            browsers: ['last 3 versions']
+            browsers: ['last 10 versions']
         }))
         .pipe(gulp.dest('css'))
         .pipe(browserSync.stream());

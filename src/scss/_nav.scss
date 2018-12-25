@@ -4,15 +4,17 @@
      color: white;
      border-bottom: 1px solid #ffffff12;
      font-family: $font-skranji;
-     letter-spacing: 1px;
 
      .nav__title {
-          font-size: 70px;
+          font-size: 60px;
           text-align: center;
           line-height: 70px;
           margin: 0 0 30px 50px;
           padding-top: 10px;
+          letter-spacing: 5px;
      }
+
+     letter-spacing: 3px;
 
      .nav__title>img {
           height: 50px;
