@@ -7,8 +7,8 @@
 > - Gra napisana obiektowo według wytycznych warsztatu.
 > - Ekran startowy umożliwia wybranie szerokości i wysokości planszy, 
     rozdzielczości, czasu trwania pojedynczego cyklu, ilości początkowych komórek jako % wszystkich dostępnych na planszy.
- <img alt="Logo" src="http://maciejf.pl/img/GoL4.jpg" height="120px">
-> - aby rozpocząć symulację należy nacisnąć przycisk PLAY.
+> - <img alt="Logo" src="http://maciejf.pl/img/GoL4.jpg" height="120px">
+> - Aby rozpocząć symulację należy nacisnąć przycisk PLAY.
 
 
 ## Zasady
