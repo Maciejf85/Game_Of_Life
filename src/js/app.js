@@ -4,7 +4,8 @@ var vHeight = document.querySelector('.board-height > .value');
 var vResolution = document.querySelector('.resolution > .value');
 var vSpeed = document.querySelector('.speed > .value');
 var vElements = document.querySelector('.elements > .value');
-var play = document.getElementById('play');
+var play = document.querySelector('.infoPage');
+
 
 function GameOfLife(boardWidth, boardHeight, resolution) {
      this.width = boardWidth;
@@ -140,21 +141,15 @@ function start(x, y, r) {
 
      setTimeout(function () {
           setInterval(game.drawNewStep, vSpeed.innerHTML)
-     }, 3000);
+     }, 2000);
 
 
      game.firstScreen.classList.add('hide');
 
-     setTimeout(function () {
+     setTimeout(function () { //podmiana ekranów
           game.board.style.display = "block";
-          game.firstScreen.display = 'none';
+          game.firstScreen.style.display = 'none';
      }, 1200)
-
-
-     setTimeout(function () {
-          play.style.display = 'none';
-     }, 2000)
-
 
 
      game.rew.addEventListener('click', function () {
@@ -171,11 +166,9 @@ play.addEventListener('click', function () {
 });
 
 function addValue() {
-
      var parent = this.parentElement;
      var value = parent.querySelector('.value');
      var arrow = this.classList.value;
-
 
      var result = +value.innerHTML;
 
@@ -196,10 +189,10 @@ function addValue() {
      }
 
      if (this.parentElement.classList == 'resolution') {
-          if (arrow == 'arrow up' && result < 20) {
-               result += 4;
-          } else if (arrow == 'arrow down' && result > 4) {
-               result -= 4;
+          if (arrow == 'arrow up' && result < 10) {
+               result += 5;
+          } else if (arrow == 'arrow down' && result > 5) {
+               result -= 5;
           }
      }
 
@@ -219,17 +212,5 @@ function addValue() {
           }
      }
 
-
-
      value.innerHTML = result;
-
 }
-
-
-
-
-
-
-
-
-// start(950, 600, 5, 100, 0.8)
