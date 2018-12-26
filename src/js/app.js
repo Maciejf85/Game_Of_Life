@@ -80,8 +80,8 @@ function GameOfLife(boardWidth, boardHeight, resolution) {
 
      this.computeCellNextState = function (x, y) {
           var sum = 0;
-          for (let i = -1; i < 2; i++) {
-               for (let j = -1; j < 2; j++) {
+          for (var i = -1; i < 2; i++) {
+               for (var j = -1; j < 2; j++) {
 
                     if (i != 0 || j != 0) {
                          var cell = this.returnValue(x + j, y + i);

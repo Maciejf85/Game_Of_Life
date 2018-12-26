@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 
@@ -16,7 +16,7 @@ gulp.task('serve', function () {
     });
 
     gulp.watch('./*.html', ['reload']);
-    gulp.watch('./src/js/*.js', ['reload']);
+    gulp.watch('./src/js/**/*.js', ['reload']);
 });
 
 gulp.task('sass', function () {
@@ -30,15 +30,17 @@ gulp.task('sass', function () {
         .pipe(autoprefixer({
             browsers: ['last 10 versions']
         }))
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.stream());
 });
 
 gulp.task('js', function () {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('./src/js/**/*.js')
         .pipe(uglify())
-        .pipe(gulp.dest('dist'));
-})
+        .pipe(gulp.dest('dist/js'));
+});
+
+
 // minifikacja javascript ===> gulp js
 
 

@@ -1,19 +1,27 @@
 {
-  "name": "game-of-life",
+  "name": "game_of_life",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "> - Gra napisana obiektowo według wytycznych warsztatu.\r > - Ekran startowy umożliwia wybranie szerokości i wysokości planszy, \r     rozdzielczości, czasu trwania pojedynczego cyklu, ilości początkowych komórek jako % wszystkich dostępnych na planszy.\r > - <img alt=\"Logo\" src=\"http://maciejf.pl/img/GoL4.jpg\" height=\"120px\">\r > - Aby rozpocząć symulację należy nacisnąć przycisk PLAY.",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Maciej Fiałkowski",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maciejf85/Game_Of_Life.git"
+  },
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maciejf85/Game_Of_Life/issues"
+  },
+  "homepage": "https://github.com/Maciejf85/Game_Of_Life#readme",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^2.0.0"
   }
 }
