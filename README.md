@@ -24,4 +24,6 @@
 
 
 
-<img alt="Logo" src="http://maciejf.pl/img/GoL1.jpg" width="33%"><img alt="Logo" src="http://maciejf.pl/img/GoL2.jpg" width="33%"><img alt="Logo" src="http://maciejf.pl/img/GoL3.jpg" width="33%">
+<p align="center"><img alt="Logo" src="http://maciejf.pl/img/GoL1.jpg" width="70%"> </p>   
+<p align="center"><img alt="Logo" src="http://maciejf.pl/img/GoL2.jpg" width="70%"></p>
+<p align="center"><img alt="Logo" src="http://maciejf.pl/img/GoL3.jpg" width="70%"></p>
