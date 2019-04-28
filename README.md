@@ -7,7 +7,7 @@
 ## Opis
 
 Gra napisana obiektowo zgodnie z założeniami automatu komórkowego wymyślonego w 1970 roku przez Johna Conwaya. <br>
-Ekran startowy umożliwia wybranie szerokości i wysokości planszy,
+W grze nie ma graczy . Udział człowieka sprowadza się jedynie do ustalenia wielkości planszy, 
 rozdzielczości, czasu trwania pojedynczego cyklu, ilości początkowych komórek jako % wszystkich dostępnych na planszy.<br>
 <img alt="Logo" src="http://maciejf.pl/img/GoL4.jpg" height="120px"><br>
 Aby rozpocząć symulację należy nacisnąć przycisk PLAY.
@@ -29,4 +29,4 @@ Aby rozpocząć symulację należy nacisnąć przycisk PLAY.
 > - Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa, przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”)
 
 <img alt="Logo" src="http://maciejf.pl/img/GoL1.jpg" width="100%"/>    
-<img alt="Logo" src="http://maciejf.pl/img/gameOfLife/gif/gol1c.gif" />
+<img alt="Logo" src="http://maciejf.pl/img/gameOfLife/gif/complete.gif" />
