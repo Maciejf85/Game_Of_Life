@@ -29,4 +29,4 @@ Aby rozpocząć symulację należy nacisnąć przycisk PLAY.
 > - Żywa komórka z 2 albo 3 żywymi sąsiadami pozostaje nadal żywa, przy innej liczbie sąsiadów umiera (z „samotności” albo „zatłoczenia”)
 
 <img alt="Logo" src="http://maciejf.pl/img/GoL1.jpg" width="100%"/>    
-<img alt="Logo" src="http://maciejf.pl/img/gameOfLife/gif/complete.gif" />
+<img alt="Logo" src="http://maciejf.pl/img/gameOfLife/gif/complete1.gif" />
