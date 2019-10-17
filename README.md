@@ -2,7 +2,7 @@
 
 ### Zapraszam do gry
 
-#### http://maciejf.pl/gameoflife/
+#### https://maciejf.pl/gameoflife/
 
 ## Opis
 
